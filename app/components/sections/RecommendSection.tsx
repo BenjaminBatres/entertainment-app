@@ -14,8 +14,9 @@ export default function RecommendSection({ title }: RecommendSectionProps) {
   const TVCategory = Movies.filter((movie) => movie.category === "TV Series");
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setIsLoading(false);
+      console.log('ran?')
     }, 500);
   }, [title]);
 

@@ -16,8 +16,9 @@ export default function TrendingSection({ title }: any) {
   const trending = Movies.filter((movie) => movie.isTrending);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setIsLoading(false);
+      console.log('ran?')
     }, 500);
   }, [title]);
 
