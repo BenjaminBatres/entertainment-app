@@ -18,7 +18,6 @@ export default function TrendingSection({ title }: any) {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      console.log('ran?')
     }, 500);
   }, [title]);
 
