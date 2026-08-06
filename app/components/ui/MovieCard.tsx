@@ -12,7 +12,23 @@ export default function MovieCard({ movie }: { movie: IMovies }) {
         height={280}
         loading="eager"
         alt=""
-        className="rounded-[10px] h-38 sm:h-auto mb-1.5 object-cover"
+        className="rounded-[10px] hidden md:block mb-1.5 object-cover"
+      />
+      <Image
+        src={movie.thumbnail?.regular.medium}
+        width={500}
+        height={280}
+        loading="eager"
+        alt=""
+        className="rounded-[10px] hidden sm:block md:hidden mb-1.5 object-cover"
+      />
+      <Image
+        src={movie.thumbnail?.regular.small}
+        width={500}
+        height={280}
+        loading="eager"
+        alt=""
+        className="rounded-[10px] sm:hidden mb-1.5 object-cover"
       />
       <div className="absolute top-4 right-4">
         <div className="flex justify-center items-center h-8 w-8 bg-Blue-950/60 rounded-full">
